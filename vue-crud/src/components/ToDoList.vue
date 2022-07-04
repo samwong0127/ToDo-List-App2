@@ -2,6 +2,13 @@
 <div class="list row">
     <div class="col-md-6">
         <h4>To-Do List</h4>
+		<button class="m-3 btn btn-sm btn-success" @click="fetchAllStatusEvents(true)">
+          View Finished events
+        </button>
+        <button class="m-3 btn btn-sm btn-warning" @click="fetchAllStatusEvents(false)">
+          View Pending events
+        </button>
+        
         <ul class="list-group">
         <li class="list-group-item"
          :class="{ active: index == currentIndex }"
@@ -56,6 +63,19 @@ export default {
             .then(response => {
                 this.events = response.data;
                 console.log(response.data);
+            })
+            .catch(e => {
+                console.log(e);
+            });
+        },
+		
+		fetchAllStatusEvents(status) {
+            ToDoListServices.getAllStatus(status)
+            .then(response => {
+                this.events = response.data;
+                console.log(response.data);
+                //this.currentEvent = null;
+                //this.currentIndex = -1;
             })
             .catch(e => {
                 console.log(e);

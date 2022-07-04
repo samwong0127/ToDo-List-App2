@@ -6,6 +6,11 @@ class ToDoListDataServices {
     getAll() {
         return http.get("/events");
     }
+	
+	getAllStatus(finished){
+        return http.get(`/events/finished/${finished}`)
+    }
+	
     get(id) {
         return http.get(`/events/${id}`);
     }
