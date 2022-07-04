@@ -3,15 +3,15 @@
 ### MySQL database setup
 1. Create a database with the following parameters
     
-    HOST:`localhost`,
+    HOST: *localhost*,
     
-    USER: `test-user`,
+    USER: *test-user*,
     
-    PASSWORD: `123456789`,
+    PASSWORD: *123456789*,
     
-    DB: `node-express`
+    DB: *node-express*
     
-    OR change the settings in <b>db.config.js<b> into your database settings
+    OR change the settings in **db.config.js** into your database settings
     
 2. Run sql statment in SQL-script to create a list table
 
@@ -25,6 +25,11 @@
 1. Run `cd vue-crud`
 2. Run `npm run serve`
 3. Visit app with http://localhost:8081
+
+Bugs:
+1. After clicking **View Pending events** or **View Finished events** buttons, **Refresh** button is freezed. 
+    
+    Non-functional solution: Click **Add** button and then click **Refresh** button.
 
 
 Referecens:
