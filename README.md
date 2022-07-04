@@ -26,16 +26,30 @@
 2. Run `npm run serve`
 3. Visit app with http://localhost:8081
 
-![Screenshot](https://github.com/samwong0127/ToDo-List-App2/screenshots/app-allevents-view.jpg?raw=true)
+**Index page**
+![My image](screenshots/app-allevents-view.jpg)
+
+**Add an event**
+![My image](screenshots/app-addevent-view.jpg)
+
+**Finished events**
+![My image](screenshots/app-finishedevents-view.jpg)
+
+**Pending events**
+![My image](screenshots/app-pendingevents-view.jpg)
+
+**Server running**
+
+![My image](screenshots/node-express-view.jpg)
 
 
-Bugs:
+### Bugs:
 1. After clicking **View Pending events** or **View Finished events** buttons, **Refresh** button is freezed. 
     
     Non-functional solution: Click **Add** button and then click **Refresh** button.
 
 
-Referecens:
+### Referecens:
     
 https://www.bezkoder.com/vue-3-crud/
     
