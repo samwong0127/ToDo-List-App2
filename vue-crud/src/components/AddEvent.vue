@@ -26,7 +26,8 @@
     </div>
     <div v-else>
       <h4>New event added!</h4>
-      <button class="btn btn-success" @click="newEvent">Add another event</button>
+      Click Refresh to see the full list or click
+      <button class="btn btn-success" @click="newEvent">here</button> to add another event
     </div>
   </div>
 </template>

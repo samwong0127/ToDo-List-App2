@@ -92,8 +92,9 @@ export default {
       ToDoListServices.delete(this.currentEvent.id)
         .then(response => {
           console.log(response.data);
-          this.$router.push({ name: "events" });
           this.message = 'This event is deleted! Please Refresh.';
+          this.$router.push({ name: "events" });
+          
         })
         .catch(e => {
           console.log(e);
